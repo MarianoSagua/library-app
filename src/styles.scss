@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+.active {
+  border-bottom: 1px solid black;
+}
+
+.uploadIconButton {
+  background-color: grey;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 auto;
+
+  &:hover {
+    opacity: 0.7;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+.uploadedImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 auto;
+
+  &:hover {
+    opacity: 0.7;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+// LOGIN PAGE
+
+.loginPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 600px;
+    // height: 700px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 80px 30px;
+
+    &--title {
+      text-align: center;
+      // margin: 50px 0;
+      margin-bottom: 50px;
+      font-weight: 800;
+    }
+  }
+}
+
+.linksAuth {
+  color: rgb(120, 120, 120);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+// NAVBAR
+.navbar-nav {
+  display: flex;
+  align-items: start;
+
+  @media (min-width: 992px) {
+    align-items: center;
+  }
+}
+
+// FOOTER
+.footer {
+  background-color: #efefefe8;
+  color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// ALL BOOKS
+.bookPage {
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// MY BOOKS
+.bookToAdd {
+  width: 200px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: rgba(152, 152, 152, 152);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coverAddMyBook {
+  width: 150px;
+  height: 200px;
+  background-color: rgba(152, 152, 152, 152);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.labelChangeImgAddBook{
+  cursor: pointer;
+  margin-top: 5px;
+  color: rgba(128, 128, 128, 0.91);
+}
+
+
+// ITEM MY BOOK
+
+.imgCover{
+  width: 200px;
+  height: 300px;
+}
